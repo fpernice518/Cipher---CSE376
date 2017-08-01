@@ -1,0 +1,49 @@
+Frank Pernice
+CSE 376
+Homework 1: Cipher
+
+======README=======
+
+- The provided program encrypt and decrypts files as described- in the homework decription page.
+
+- The following assumptions were made:
+  * outfile and infile cannot be the same
+  * no option can be used more than once
+
+- To make passing data easier, much of the data is passed ins structures. 
+
+- To avoid the possibility of accidental assignments within an if()  statement, the following convention was used:
+
+   "false == myBool" rather than "myBool == false"
+
+  This way, a compile time error will be produced rather than a runtime    error.
+
+- The "-s" option has bene implemented as part of extra credit
+
+- The Makefile has been organized so that all source code is located in the src directory.
+  * There are two makefiles, a parent and a child (in src directory).
+  * A symbolic link to the executable is placed in the top directory so that we can run as expected
+
+-------Files included-------
+#source code:
+/src/bf_cfb64.c
+/src/bf_enc.c
+/src/bf_locl.h
+/src/bf_pi.h
+/src/bf_skey.c
+/src/blowfish.h
+/src/cipher.c
+/src/cipher.h
+/src/encrypt.c
+/src/file_utils.c
+/src/Makefile
+/src/parsing_utils.c
+
+#other files
+Makefile
+README
+
+
+
+
+
